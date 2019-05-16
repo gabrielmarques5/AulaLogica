@@ -1,20 +1,17 @@
 <?php
 $v = array();
 $i = 0;
-$mult = 0;
-$soma = 0;
+$total = 0;
 
-
-$mult = 1;
-for ($i = 0; $i < 5; $i++) {
-	echo "Digite um valor: ";
-	$v[$i] = readline();
-	$mult = $mult * $v[$i];
-	$soma = $soma + $v[$i];
+for ($i = 0; $i < 2; $i++) {
+	for ($j = 0; $j < 2; $j++) {
+		echo "Digite um valor: ";
+		$v[$i][$j] = readline();
+		$total = ($total * $v[$i][$j]) / ($total + $v[$i][$j]);
+	}
 }
 
-echo "A multiplicacao dos valores dividido pela soma dos valores e: ";
-echo $mult / $soma;
-echo PHP_EOL;
+echo "A multiplicação dos valores dividido pela soma dos valores é: ";
+echo $total;
 
 ?>

@@ -3,12 +3,14 @@ $v = array();
 $i = 0;
 $total = 0;
 
-for ($i = 0; $i < 20; $i++) {
-	echo "Digite um valor: ";
-	$v[$i] = readline();
+for ($i = 0; $i < 3; $i++) {
+	for ($j = 0; $j < 4; $j++) {
+		echo "Digite um valor: ";
+		$v[$i][$j] = readline();
 
-	if (($i % 2) <> 0) {
-		$total = $total + $v[$i];
+		if (($i % 2) <> 0) {
+			$total = $total + $v[$i][$j];
+		}
 	}
 }
 
