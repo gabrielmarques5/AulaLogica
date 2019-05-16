@@ -1,19 +1,16 @@
 <?php
-$m = array();
+
+$p = array();
+$cad = array();
 $i = 0;
-$j = 0;
-$total = 0;
 
-for ($i = 0; $i < 3; $i++) {
-	for ($j = 0; $j < 3; $j++) {
-		echo "Digite um valor: ";
-		$m[$i][$j] = readline();
-		$total = $total + $m[$i][$j];
-	}
+for ($i = 0; $i < 5; $i++) {
+	echo "Digite um nome: ";
+	$p["nome"] = readline();
+	echo "Digite o sexo: ";
+	$p["sexo"] = readline();
+	echo "Digite a idade: ";
+	$p["idade"] = readline();
+	$cad[$i] = $p;
 }
-
-echo "A soma de todos os valores é: ";
-echo $total;
-echo PHP_EOL;
-
 ?>

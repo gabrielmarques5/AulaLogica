@@ -1,17 +1,36 @@
 <?php
-$v = array();
-$i = 0;
-$total = 0;
 
-for ($i = 0; $i < 2; $i++) {
-	for ($j = 0; $j < 2; $j++) {
-		echo "Digite um valor: ";
-		$v[$i][$j] = readline();
-		$total = ($total * $v[$i][$j]) / ($total + $v[$i][$j]);
-	}
+$p = array();
+$cad = array();
+$i = 0;
+
+for ($i = 0; $i < 5; $i++) {
+	$p["nome"] = "";
+	$p["genero"] = "";
+	$p["ano"] = 0;
+	$cad[$i] = $p;
+	$p = array();
 }
 
-echo "A multiplicação dos valores dividido pela soma dos valores é: ";
-echo $total;
+for ($i = 0; $i < 5; $i++) {
+	echo "Digite o nome do jogo: ";
+	$cad[$i]["nome"] = readline();
 
+	echo "Digite o genero do jogo: ";
+	$cad[$i]["genero"] = readline();
+
+	echo "Digite o ano do jogo: ";
+	$cad[$i]["ano"] = readline();
+}
+
+
+for ($i = 0; $i < 5; $i++) {
+	echo " Nome: ";
+	echo $cad[$i]["nome"];
+	echo " Genero: ";
+	echo $cad[$i]["genero"];
+	echo " Ano: ";
+	echo $cad[$i]["ano"];
+	echo PHP_EOL;
+}
 ?>

@@ -1,12 +1,14 @@
 <?php
-$m = array();
+
+$p = array();
+$cad = array();
 $i = 0;
-$j = 0;
 
 for ($i = 0; $i < 5; $i++) {
-	for ($j = 0; $j < 5; $j++) {
-		$m[$i] = array();
-		$m[$i][$j] = 0;
-	}
+	$p["nome"] = " ";
+	$p["sexo"] = " ";
+	$p["idade"] = 0;
+	$cad[$i] = $p;
+	$p = array();
 }
 ?>
