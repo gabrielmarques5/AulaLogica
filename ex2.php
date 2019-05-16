@@ -1,7 +1,9 @@
 <?php
-$a = 5;
-$b = 7;
-$c = 9;
-$x = $a + $b + $c;
-?>
+$v = array();
+$i = 0;
 
+for ($i = 0; $i < 30; $i++) {
+	echo "Digite um valor: ";
+	$v[$i] = readline();
+}
+?>
